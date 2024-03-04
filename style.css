@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+:root {
+  --primery--color: rgba(237, 228, 228, 0.4);
+  --secundery--color: darkred;
+  --third--color: black;
+  --four--color: rgba(237, 228, 228, 0.6);
+}
+
+.dark-them {
+  --primery--color: rgba(0, 0, 0, 0.4);
+  --secundery--color: rgb(255, 255, 255);
+  --third--color: rgb(255, 255, 255);
+  --four--color: rgba(237, 228, 228, 0.6);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-pic {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  z-index: -1;
+}
+
+.them {
+  background-color: var(--primery--color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.moon-icon {
+  height: 40px;
+  position: absolute;
+  top: -50px;
+  left: -60px;
+  cursor: pointer;
+}
+
+section {
+  width: 400px;
+  height: 250px;
+  background-color: var(--primery--color);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sec-container {
+  width: 250px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.time-contain {
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--secundery--color);
+  font-family: "Poiret One", sans-serif;
+}
+
+.start-btn,
+.pause-btn,
+.reset-btn {
+  background-color: var(--four--color);
+  border: 1px solid var(--third--color);
+  padding: 8px 26px;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.start-btn:active {
+  opacity: 0.6;
+}
+
+.pause-btn:active {
+  opacity: 0.6;
+}
+
+.reset-btn:active {
+  opacity: 0.6;
+}
